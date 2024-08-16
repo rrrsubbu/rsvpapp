@@ -3,12 +3,14 @@ kind: Service
 metadata:
   name: rsvp
   labels:
-    apps: rsvp
+    app: rsvp
 spec:
   type: LoadBalancer
   ports:
-  - name: tcp-31081-5000
-    port: 5001
+  - name: tcp-5000
+    port: 5000
+    targetPort: 5000
     protocol: TCP
   selector:
-    app: rsvpdw
+    app: rsvp
+
