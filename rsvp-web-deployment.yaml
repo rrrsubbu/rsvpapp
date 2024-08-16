@@ -5,12 +5,12 @@ metadata:
 spec: 
   replicas: 1
   selector:
-   matchLabels: 
-    app: rsvp
+    matchLabels: 
+      app: rsvp
   template:
     metadata:
       labels:
-        app: rsvp1
+        app: rsvp
     spec:
       containers:
       - name: rsvp-app
